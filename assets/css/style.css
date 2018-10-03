@@ -1,10 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Mukta:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-body, html{
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Mukta:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
+/*------------------------------------------------------------Colors-----*/
+
+.bg-color-name-title {
+    background-color: orange;
+    z-index: 1;
 }
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif
+}
+
+/*------------------------------------------------------------Heading-----*/
+
 header {
     margin: 0;
+}
+.heading {
+    width:100%;
+    margin-right: 25px;
+}
+
+
+.name {
+    font-family: 'Exo', sans-serif;
+    font-size: 46px;
+    font-weight: 200i;
+    margin-top: 50px;
+    text-align: right;
+    color: #fff;
+
+}
+.title {
+    width: 100%;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+    color: #fff;
+    
 }
 
 .row {
@@ -12,29 +48,24 @@ header {
     padding: 0;
     width: 100%;
     height: 30%;
-    background-color: rgba(10, 10, 10, .5);
+    /*background-color: rgba(10, 10, 10, .5);*/
 
     display: flex;
-    
 }
 
-.column--33 {
+.column--40 {
 
-    width: 33%;
+    width: 40%;
     height: 100%;
+    background-color: transparent;
 }
 
-.column--66 {
+.column--60 {
 
-    width: 33%;
+    width: 60%;
     height: 100%;
-}
-
-.logocontainer {
-    height: 100%;
-    width: 33%;
-    margin: 0;
-    padding: 0;
+    background-color: transparent;
+    display: flex;
 }
 
 .logo {
@@ -46,6 +77,10 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+}
 
+/*------------------------------------------------------------Colors-----*/
 
+.bg-color-name-title {
+    background-color: orange;
 }
