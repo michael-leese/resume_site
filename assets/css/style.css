@@ -44,7 +44,7 @@ header {
     padding: 0;
     margin: 0;
     width: 70%;
-    height: 400px;
+    max-height: 400px;
     background-color: transparent;
 
 }
@@ -82,43 +82,6 @@ header {
     justify-content: center;
     align-items: center;
 
-}
-
-@media only screen and (max-width: 768px) {
-    .row {
-        margin: 0;
-    }
-    .column--30 {
-        width: 30%;
-        height: 300px;
-    }
-    div.logo {
-        min-height: 300px;
-    }
-    .navlink {
-        width: 100%;
-    }
-    .list-inline {
-        padding: 0;
-        margin: 0;
-        height: 100px;
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 495px) {
-    .heading {
-        flex-wrap: nowrap;
-
-    }
-    .name {
-        font-size: auto;
-        flex-wrap: nowrap;
-    }
-    .title {
-        font-size: auto;
-        flex-wrap: nowrap;
-    }
 }
 
 .navlinkitem {
@@ -219,4 +182,72 @@ header {
 
 .nav--cv span {
     color: #fff;
+}
+/*----------- media queries--*/
+
+@media only screen and (max-width: 768px) {
+    .row {
+        margin: 0;
+    }
+    .column--30 {
+        width: 30%;
+        height: 300px;
+    }
+    .column--70{
+        min-height:300px;
+    }
+    div.logo {
+        min-height: 300px;
+    }
+    .navlink {
+        width: 100%;
+    }
+    .list-inline {
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 494px) {
+    .column--30 {
+        width: 30%;
+        height: 200px;
+    }
+    div.column--70{
+        min-height:200px;
+    }
+    div.container{
+        max-height:200px;
+    
+    }
+    div.logo {
+        min-height: 130px;
+    }
+    
+    div.navbar-row {
+        width: 146.88px;
+        position: relative;
+        top: -70px;
+        left: -43%;
+    }
+   .list-inline{
+    width: 112.55px;
+    height: 70px;
+    }
+    .navlinkitem {
+        font-size: smaller;
+    }
+    .heading {
+        flex-wrap: nowrap;
+
+    }
+    h1.name {
+        font-size: 25px;
+        flex-wrap: nowrap;
+    }
+    h2.title {
+        font-size: 16px;
+        flex-wrap: nowrap;
+    }
 }
