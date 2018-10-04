@@ -3,14 +3,17 @@
 
 .bg-color-name-title {
     background-color: orange;
-    z-index: 1;
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Mukta', sans-serif
+    font-family: 'Mukta', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
 }
 
 /*------------------------------------------------------------Heading-----*/
@@ -18,11 +21,87 @@ html {
 header {
     margin: 0;
 }
+
+.row {
+    margin: 0 0 100px 0;
+    padding:0;
+    width: 100%;
+    height: 200px;
+    /*background-color: rgba(10, 10, 10, .5);*/
+    display: flex;
+    flex-flow: row;
+}
+
+.column--30 {
+
+    width: 30%;
+    height: 400px;
+    background-color: transparent;
+}
+
+.column--70 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    height: 400px;
+    background-color: transparent;
+
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+
+}
+
 .heading {
-    width:100%;
+    width: 100%;
+    height: 100%;
     margin-right: 25px;
 }
 
+.navbar-row {
+    height: 100px;
+
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+
+}
+
+.navlink {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 25%;
+    border: none;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.navlinkitem {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 300i;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+
+}
+
+.list-inline {
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
 
 .name {
     font-family: 'Exo', sans-serif;
@@ -33,6 +112,7 @@ header {
     color: #fff;
 
 }
+
 .title {
     width: 100%;
     font-family: 'Mukta', sans-serif;
@@ -40,47 +120,58 @@ header {
     font-weight: 500;
     text-align: right;
     color: #fff;
+
+}
+
+.logocontainer {
     
 }
 
-.row {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 30%;
-    /*background-color: rgba(10, 10, 10, .5);*/
-
-    display: flex;
-}
-
-.column--40 {
-
-    width: 40%;
-    height: 100%;
-    background-color: transparent;
-}
-
-.column--60 {
-
-    width: 60%;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-}
 
 .logo {
     background-image: url("../images/profileimage.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
+    min-height: 400px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-
+.mainbody{
+    position: relative;
+    top:100px;
+    left:0px;
+    padding:0;
+    margin:0;
+    
+}
 /*------------------------------------------------------------Colors-----*/
 
 .bg-color-name-title {
-    background-color: orange;
+    background-color: rgba(255, 165, 0, 0.9);
+}
+.nav--home{
+    background-color: rgba(255, 165, 0, 0.9);
+}
+.nav--history{
+    background-color: rgba(1, 121, 14, 0.9);
+}
+.nav--contact{
+    background-color: rgba(238, 8, 8, 0.94);
+}
+.nav--cv {
+    background-color: #4a4a4a;
+}
+.nav--home span{
+    color: #fff;
+}
+.nav--history span{
+    color: #fff;
+}   
+.nav--contact span{
+    color: #fff;
+}
+.nav--cv span{
+    color: #fff;
 }
