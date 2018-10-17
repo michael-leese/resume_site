@@ -74,7 +74,7 @@ header {
     padding: 0;
     margin: 0;
     height: 100px;
-    width: 25%;
+    width: 113.55px;
     border: none;
     list-style: none;
     text-align: center;
@@ -226,14 +226,15 @@ header {
     }
     
     div.navbar-row {
-        width: 146.88px;
-        position: relative;
-        top: -70px;
-        left: -43%;
-    }
+    width: 146.88px;
+    position: relative;
+    top: -70px;
+    left: -49.5%;
+}
    .list-inline{
     width: 112.55px;
     height: 70px;
+    flex-grow: 1;
     }
     .navlinkitem {
         font-size: smaller;
