@@ -177,9 +177,11 @@ a .navlinkitem {
     justify-content: center;
 }
 
-li.navlinkitem {
+#nav--link {
+        display: flex;
     flex-direction: column;
 }
+
 
 .list-inline {
     padding: 0;
@@ -274,7 +276,9 @@ h5 {
 
 /*----------- media queries--*/
 
-@media only screen and (max-width: 1406px) {}
+@media only screen and (max-width: 1406px) {
+    
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -313,10 +317,9 @@ h5 {
         font-size: 20px;
         flex-wrap: nowrap;
     }
-    /* a {
-            flex-grow: 1;
-            flex-direction: row;
-        }*/
+    #nav--link {
+        display: inline;
+}
 }
 
 @media only screen and (max-width: 378px) {
