@@ -16,6 +16,100 @@ html {
     flex-flow: column;
 }
 
+/*------------------------------------------------------------Colors-----*/
+
+.bg-color-name-title {
+    background-color: rgba(255, 165, 0, 0.9);
+}
+
+.nav--home {
+    background-color: rgba(255, 165, 0, 0.9);
+}
+
+.nav--history {
+    background-color: rgba(1, 121, 14, 0.9);
+}
+
+.nav--contact {
+    background-color: rgba(238, 8, 8, 0.94);
+}
+
+.nav--cv {
+    background-color: #4a4a4a;
+}
+
+.nav--home span {
+    color: #fff;
+}
+
+.nav--history span {
+    color: #fff;
+}
+
+.nav--contact span {
+    color: #fff;
+}
+
+.nav--cv span {
+    color: #fff;
+}
+
+.fa-home {
+    color: #fafafa;
+}
+
+.fa-graduation-cap {
+    color: #fafafa;
+}
+
+.fa-comment-dots {
+    color: #fafafa;
+}
+
+.fa-cloud-download-alt {
+    color: #fafafa;
+}
+
+/*------------------------------------Special padding margin text etc...-----------*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    padding: 0;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    /*color: #fafafa;*/
+    text-align: center;
+}
+
+/*--------------------------------------- Grow ---------------*/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
 /*------------------------------------------------------------Heading-----*/
 
 header {
@@ -70,11 +164,15 @@ header {
 
 }
 
+a .navlinkitem {
+    display: flex;
+}
+
 .navlink {
     padding: 0;
     margin: 0;
     height: 100px;
-    width: 113.55px;
+    width: 100%;
     border: none;
     list-style: none;
     text-align: center;
@@ -91,8 +189,10 @@ header {
     font-weight: 300i;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+}
 
+a {
+    flex-direction: column;
 }
 
 .list-inline {
@@ -146,43 +246,43 @@ header {
 
 }
 
-/*------------------------------------------------------------Colors-----*/
 
-.bg-color-name-title {
-    background-color: rgba(255, 165, 0, 0.9);
+/*------------------------------------footer-----------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
 }
 
-.nav--home {
-    background-color: rgba(255, 165, 0, 0.9);
+div.footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    /*background-color: rgba(10, 10, 10, .5);*/
+    display: flex;
+    flex-flow: row;
 }
 
-.nav--history {
-    background-color: rgba(1, 121, 14, 0.9);
+.column--33 {
+    width: 33.33%;
+    height: 100px;
+    background-color: ;
 }
 
-.nav--contact {
-    background-color: rgba(238, 8, 8, 0.94);
+h5 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
-.nav--cv {
-    background-color: #4a4a4a;
 }
 
-.nav--home span {
-    color: #fff;
-}
-
-.nav--history span {
-    color: #fff;
-}
-
-.nav--contact span {
-    color: #fff;
-}
-
-.nav--cv span {
-    color: #fff;
-}
 /*----------- media queries--*/
 
 @media only screen and (max-width: 768px) {
@@ -193,8 +293,8 @@ header {
         width: 30%;
         height: 300px;
     }
-    .column--70{
-        min-height:300px;
+    .column--70 {
+        min-height: 300px;
     }
     div.logo {
         min-height: 300px;
@@ -208,33 +308,43 @@ header {
         height: 100px;
         flex-direction: column;
     }
+    a {
+        flex-grow: 1;
+        flex-direction: row;
+    }
 }
+
 @media only screen and (max-width: 494px) {
     .column--30 {
         width: 30%;
         height: 200px;
     }
-    div.column--70{
-        min-height:200px;
+    div.column--70 {
+        min-height: 200px;
     }
-    div.container{
-        max-height:200px;
-    
+    div.container {
+        max-height: 200px;
+
     }
     div.logo {
         min-height: 130px;
     }
-    
+
     div.navbar-row {
-    width: 146.88px;
-    position: relative;
-    top: -70px;
-    left: -49.5%;
-}
-   .list-inline{
-    width: 112.55px;
-    height: 70px;
-    flex-grow: 1;
+        width: 146.88px;
+        position: relative;
+        top: -70px;
+        left: -49.5%;
+    }
+    .list-inline {
+        width: 112.55px;
+        height: 70px;
+    }
+    li {
+        flex-grow: 2;
+    }
+    .navlink {
+        width: 113.55px;
     }
     .navlinkitem {
         font-size: smaller;
@@ -251,4 +361,9 @@ header {
         font-size: 16px;
         flex-wrap: nowrap;
     }
+    a {
+        flex-grow: ;
+        flex-direction: row;
+    }
+
 }
