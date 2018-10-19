@@ -130,6 +130,7 @@ h4 {
     font-family: "Mukta", sans-serif;
     font-weight: 300;
     margin-top: 25px;
+    font-size: 25px;
 }
 
 .flex-container {
@@ -397,12 +398,19 @@ div.row.row-table {
 .padding--30px {
     padding: 0 30px 30px;
 }
-
+.personal-info-heading{
+    color:#fafafa;
+}
 .personal-info-item .key {
+    padding-right: 25px;
+    font-weight: 300;
     font-size: 20px;
+    width:30%;
+    color: #e67e22;
 }
 
 .personal-info-item .value {
+    width:60%;
     font-size: 15px;
     overflow-wrap: break-word;
     overflow: overlay;
@@ -495,6 +503,12 @@ ul.list-inline.social-links {
         flex-wrap: nowrap;
         flex-direction: column;
     }
+    .personal-info-item .key p{
+        font-size: 20px;
+    }
+    .personal-info-item .value p{
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -544,10 +558,10 @@ ul.list-inline.social-links {
     .personal-info-heading{
         font-size:15px;
     }
-    .key {
+    .personal-info-item .key p{
         font-size: 15px;
     }
-    .value {
+    .personal-info-item .value p{
         font-size: 10px;
     }
     .aboutme-row {
@@ -560,7 +574,7 @@ ul.list-inline.social-links {
         font-size:15px;
     }
     .three-reasons-heading{
-        font-size:10px;
+        font-size:15px;
     }
     .column--50 {
         width: 100%;
@@ -591,6 +605,15 @@ ul.list-inline.social-links {
         flex-wrap: nowrap;
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 500px){
+    .personal-info-item {
+    display: contents;
+}
+.personal-info-item .value {
+    width: 100%;
+}
 }
 
 @media only screen and (max-width: 378px) {
@@ -688,4 +711,10 @@ ul.list-inline.social-links {
     div.navbar-row {
         width: 106.88px;
     }
+    .personal-info-item .key p {
+    font-size: 12px;
+}
+.personal-info-item .value p {
+    font-size: 8px;
+}
 }
