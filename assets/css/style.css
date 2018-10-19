@@ -300,12 +300,28 @@ div.row.row-table {
     height: auto;
     display: table
 }
+.column--15{
+    position: relative;
+    width: 15%;
+}
 
 .column--66 {
     position: relative;
     width: 66%;
 }
-
+.column--60{
+    position: relative;
+    width: 60%;
+}
+.question{
+    padding:0;
+    justify-content: center;
+    display: flex;
+}
+.three-reasons-icon{
+    position:relative;
+    top: 4px;
+}
 /*------------------------------------footer-----------*/
 
 footer {
@@ -330,7 +346,7 @@ div.footer {
     position: relative;
     width: 33.33%;
     min-height: 120px;
-    background-color: transparent;
+    
 }
 
 .footer-fontawesome-sizing {
