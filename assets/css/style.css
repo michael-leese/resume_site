@@ -132,8 +132,14 @@ h4 {
 .flex-container {
     display: flex;
 }
-.column--33{
-    width:33%;
+.column--33 {
+    width: 33.33%;
+}
+.column--50{
+    width:50%;
+}
+.min-height-120{
+    min-height:120px;
 }
 /*--------------------------------------- Hover.css ---------------*/
 
@@ -330,7 +336,10 @@ div.row.row-table {
     position: relative;
     width: 60%;
 }
-
+.aboutme-row{
+    display: flex;
+    flex-wrap: wrap;
+}
 .question {
     padding: 0;
     justify-content: center;
@@ -370,12 +379,7 @@ div.footer {
     flex-flow: row;
 }
 
-.column--33 {
-    position: relative;
-    width: 33.33%;
-    min-height: 120px;
 
-}
 
 .footer-fontawesome-sizing {
     font-size: 15px;
