@@ -117,7 +117,7 @@ h4 {
     text-align: center;
     font-size: 16px;
 }
-.sectio-heading{
+.section-heading{
     font-family: "Mukta", sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -271,30 +271,36 @@ a .navlinkitem {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-
-.mainbody {
-    position: relative;
-    top: 100px;
-    left: 0px;
-    padding: 0;
-    margin: 0;
-
-}
-
 /*------------------------------------mainbody-----------*/
+
 
 .container-mainbody {
     position: relative;
     top: 100px;
+    background-color: #8f8f8f;
 }
 
 .section-column {
     padding: 0 30px 30px;
-    display: display: table-cell;
+    display: table-cell;
     float: none; 
 }
-.row-table{
+.row2{
+    
+}
+/*.row-table{
     display: table;
+}*/
+div.row.row-table{
+    margin: 5px;
+    width: auto;
+    height: auto;
+    display: table
+    
+}
+.column--66{
+    position:relative;
+    width:66%;
 }
 
 /*------------------------------------footer-----------*/
