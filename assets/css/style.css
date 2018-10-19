@@ -301,6 +301,7 @@ a .navlinkitem {
 
 .container-mainbody {
     padding-top: 100px;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -393,24 +394,27 @@ div.row.row-table {
 .personal-info-item {
     margin-bottom: 20px;
     display: inline-flex;
-    align-items:center;
+    align-items: center;
 }
+
 .padding--30px {
     padding: 0 30px 30px;
 }
-.personal-info-heading{
-    color:#fafafa;
+
+.personal-info-heading {
+    color: #fafafa;
 }
+
 .personal-info-item .key {
     padding-right: 25px;
     font-weight: 300;
     font-size: 20px;
-    width:30%;
+    width: 30%;
     color: #e67e22;
 }
 
 .personal-info-item .value {
-    width:60%;
+    width: 60%;
     font-size: 15px;
     overflow-wrap: break-word;
     overflow: overlay;
@@ -503,10 +507,10 @@ ul.list-inline.social-links {
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    .personal-info-item .key p{
+    .personal-info-item .key p {
         font-size: 20px;
     }
-    .personal-info-item .value p{
+    .personal-info-item .value p {
         font-size: 15px;
     }
 }
@@ -555,26 +559,26 @@ ul.list-inline.social-links {
     .container-mainbody {
         padding-top: 0;
     }
-    .personal-info-heading{
-        font-size:15px;
-    }
-    .personal-info-item .key p{
+    .personal-info-heading {
         font-size: 15px;
     }
-    .personal-info-item .value p{
+    .personal-info-item .key p {
+        font-size: 15px;
+    }
+    .personal-info-item .value p {
         font-size: 10px;
     }
     .aboutme-row {
         display: inline;
     }
-    .aboutme-heading{
-        font-size:15px;
+    .aboutme-heading {
+        font-size: 15px;
     }
-    .three-reasons-icon{
-        font-size:15px;
+    .three-reasons-icon {
+        font-size: 15px;
     }
-    .three-reasons-heading{
-        font-size:15px;
+    .three-reasons-heading {
+        font-size: 15px;
     }
     .column--50 {
         width: 100%;
@@ -607,13 +611,13 @@ ul.list-inline.social-links {
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
     .personal-info-item {
-    display: contents;
-}
-.personal-info-item .value {
-    width: 100%;
-}
+        display: contents;
+    }
+    .personal-info-item .value {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 378px) {
@@ -712,9 +716,9 @@ ul.list-inline.social-links {
         width: 106.88px;
     }
     .personal-info-item .key p {
-    font-size: 12px;
-}
-.personal-info-item .value p {
-    font-size: 8px;
-}
+        font-size: 12px;
+    }
+    .personal-info-item .value p {
+        font-size: 8px;
+    }
 }
