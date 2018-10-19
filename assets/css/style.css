@@ -22,6 +22,10 @@ html {
     background-color: #ffffff;
 }
 
+.bg-color-personal-info {
+    background-color: #5f5f5f;
+}
+
 .nav--home {
     background-color: rgba(255, 165, 0, 0.9);
 }
@@ -126,21 +130,24 @@ h4 {
     font-family: "Mukta", sans-serif;
     font-weight: 300;
     margin-top: 25px;
-    margin-bottom: 40px;
 }
 
 .flex-container {
     display: flex;
 }
+
 .column--33 {
     width: 33.33%;
 }
-.column--50{
-    width:50%;
+
+.column--50 {
+    width: 50%;
 }
-.min-height-120{
-    min-height:120px;
+
+.min-height-120 {
+    min-height: 120px;
 }
+
 /*--------------------------------------- Hover.css ---------------*/
 
 .hvr-sweep-to-bottom:before {
@@ -177,8 +184,6 @@ header {
     margin: 0;
     width: 70%;
     max-height: 400px;
-    background-color: transparent;
-
 }
 
 .container {
@@ -295,31 +300,36 @@ a .navlinkitem {
 
 .container-mainbody {
     padding-top: 100px;
-    width: 66%;
     justify-content: center;
     align-items: center;
 }
 
 .section-column {
-    padding: 0 30px 30px;
+    padding: 0;
     float: none;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .row2 {
+    padding: 0 10px 10px;
     display: flex;
 }
 
 .row-table {
-    display: table;
+    /*display: table;*/
 }
 
 div.row.row-table {
     margin: 5px;
     width: auto;
     height: auto;
-    display: table
+}
+
+.direction-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .column--15 {
@@ -336,30 +346,64 @@ div.row.row-table {
     position: relative;
     width: 60%;
 }
-.aboutme-row{
+
+.aboutme-row {
     display: flex;
-    flex-wrap: wrap;
 }
+
 .question {
     padding: 0;
     justify-content: center;
     display: flex;
 }
+
 /*------------------------------------Three Reasons-----------*/
+
 .three-reasons-icon {
     position: relative;
     top: 7px;
-    font-size:15px;
+    font-size: 15px;
     color: #e67e22;
 }
-.three-reasons-heading{
-    margin-bottom:15px;
-    font-size:20px;
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+    font-size: 20px;
     color: #e67e22;
 }
-.three-reasons-info{
+
+.three-reasons-info {
     margin: 0;
     font-size: 15px;
+}
+
+.aboutme-column--70 {
+    position: relative;
+    width: 70%;
+}
+
+/*------------------------------------Personal Info-----------*/
+
+.personal-column--30 {
+    position: relative;
+    width: 30%;
+}
+
+.personal-info-item {
+    width: 100%;
+}
+
+.padding--30px {
+    padding: 0 30px 30px;
+}
+
+.key {
+    font-size: 20px;
+}
+
+.value {
+    font-size: 15px;
+    overflow-wrap: break-word;
 }
 
 /*------------------------------------footer-----------*/
@@ -495,12 +539,30 @@ ul.list-inline.social-links {
     .container-mainbody {
         padding-top: 0;
     }
-    .aboutme-row{
-    display: inline;
-}
-.column--50 {
-     width: 100%;
-}
+    .personal-info-heading{
+        font-size:15px;
+    }
+    .key {
+        font-size: 15px;
+    }
+    .value {
+        font-size: 10px;
+    }
+    .aboutme-row {
+        display: inline;
+    }
+    .aboutme-heading{
+        font-size:15px;
+    }
+    .three-reasons-icon{
+        font-size:15px;
+    }
+    .three-reasons-heading{
+        font-size:10px;
+    }
+    .column--50 {
+        width: 100%;
+    }
     footer {
         margin-top: 10px;
     }
@@ -579,6 +641,7 @@ ul.list-inline.social-links {
     .container-mainbody {
         padding-top: -100px;
     }
+
     .column--small-17 {
         width: 17%;
     }
@@ -618,8 +681,9 @@ ul.list-inline.social-links {
         width: 134.88px;
     }
 }
+
 @media only screen and (max-width: 330px) {
     div.navbar-row {
-            width: 106.88px;
+        width: 106.88px;
     }
 }
