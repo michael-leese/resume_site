@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Mukta:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 /*------------------------------------------------------------Colors-----*/
 
-.bg-color-name-title {
-    background-color: orange;
-}
-
 body,
 html {
     margin: 0;
@@ -20,6 +16,10 @@ html {
 
 .bg-color-name-title {
     background-color: rgba(255, 165, 0, 0.9);
+}
+
+.bg-color-three-reasons {
+    background-color: #ffffff;
 }
 
 .nav--home {
@@ -69,24 +69,32 @@ html {
 .fa-cloud-download-alt {
     color: #fafafa;
 }
-.fa-facebook{
+
+.fa-facebook {
     color: #fafafa;
 }
-.fa-twitter{
+
+.fa-twitter {
     color: #fafafa;
 }
-.fa-linkedin{
+
+.fa-linkedin {
     color: #fafafa;
 }
-.fa-pinterest{
+
+.fa-pinterest {
     color: #fafafa;
 }
-.fa-instagram{
+
+.fa-instagram {
     color: #fafafa;
 }
-.fa-youtube{
+
+.fa-youtube {
     color: #fafafa;
 }
+
+
 /*------------------------------------Special padding margin text etc...-----------*/
 
 h1,
@@ -107,26 +115,15 @@ h4 {
     font-weight: 300;
     color: #fafafa;
     text-align: center;
-    font-size:20px;
+    font-size: 16px;
+}
+.sectio-heading{
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
-.footer-info{
-    padding: 5px;
-    margin: 0;
-    font-family: "Exo", sans-serif;
-    font-weight: 100;
-    color: #fafafa;
-    text-align: center;
-    font-size: 15px;
-}
-footer .cv-pdf i:hover {
-    color: #ed4610;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-    
 /*--------------------------------------- Hover.css ---------------*/
 
 .hvr-sweep-to-bottom:before {
@@ -203,11 +200,12 @@ a .navlinkitem {
     align-items: center;
 
 }
+
 .navlink2 {
-    padding: 0;
+    padding: 10px, 0, 0, 0;
     margin: 0;
-    height: 68px;
-    width: 68px;
+    height: 50px;
+    width: 50px;
     border: none;
     list-style: none;
     text-align: center;
@@ -216,6 +214,7 @@ a .navlinkitem {
     align-items: center;
 
 }
+
 .navlinkitem {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -225,14 +224,14 @@ a .navlinkitem {
 }
 
 #nav--link {
-        display: flex;
+    display: flex;
     flex-direction: column;
 }
 
 
 .list-inline {
     padding: 0;
-    margin:0;
+    margin: 0;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -282,6 +281,21 @@ a .navlinkitem {
 
 }
 
+/*------------------------------------mainbody-----------*/
+
+.container-mainbody {
+    position: relative;
+    top: 100px;
+}
+
+.section-column {
+    padding: 0 30px 30px;
+    display: display: table-cell;
+    float: none; 
+}
+.row-table{
+    display: table;
+}
 
 /*------------------------------------footer-----------*/
 
@@ -289,17 +303,16 @@ footer {
     position: absolute;
     padding: 0;
     margin: 0;
-    bottom: 0;
+    bottom: -28px;
     width: 100%;
-    min-height: 120px;
+    min-height: 100px;
     background-color: #525252;
 }
 
 div.footer {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     width: 100%;
-    min-height: 120px;
     /*background-color: rgba(10, 10, 10, .5);*/
     display: flex;
     flex-flow: row;
@@ -312,15 +325,69 @@ div.footer {
     background-color: transparent;
 }
 
-.footer-fontawesome-sizing{
-    font-size:30px;
+.footer-fontawesome-sizing {
+    font-size: 15px;
+}
+
+.footer-info {
+    padding: 5px;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    color: #fafafa;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer .cv-pdf i {
+    font-size: 13px;
+}
+
+footer .cv-pdf i:hover {
+    color: #ed4610;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+li.navlink2 a {
+    text-decoration: none;
+}
+
+li.navlink2 a i {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #8f8f8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.navlink2 a i:hover {
+    background-color: #ed4610;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+ul.list-inline.social-links {
+    width: 150px;
 }
 
 /*----------- media queries--*/
 
-@media only screen and (max-width: 1406px) {
-    
-}
+/*@media only screen and (max-width: 1020px) {
+    ul.list-inline.social-links{
+        padding:0;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}*/
 
 @media only screen and (max-width: 768px) {
 
@@ -345,12 +412,13 @@ div.footer {
     .navlink {
         width: 100%;
     }
-    .list-inline {
+    header .list-inline {
         padding: 0;
         margin: 0;
         height: 100px;
         flex-direction: column;
     }
+
     h1.name {
         font-size: 35px;
         flex-wrap: nowrap;
@@ -361,7 +429,39 @@ div.footer {
     }
     #nav--link {
         display: inline;
-}
+    }
+    .container-mainbody {
+        position: relative;
+        top: 0px;
+    }
+    footer {
+        position: relative;
+        bottom: -423px;
+    }
+    .navlink2 {
+        margin: 2px;
+        height: 30px;
+    }
+    li.navlink2 a i {
+        padding: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #8f8f8f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-fontawesome-sizing {
+        font-size: 10px;
+    }
+    ul.list-inline.social-links {
+        padding: 0;
+        margin: 0;
+        height: 80px;
+        flex-direction: column;
+
+    }
 }
 
 @media only screen and (max-width: 378px) {
@@ -386,12 +486,9 @@ div.footer {
         top: -70px;
         left: -49.5%;
     }
-    .list-inline {
+    header .list-inline {
         width: 112.55px;
         height: 70px;
-    }
-    li {
-        flex-grow: 2;
     }
     .navlink {
         width: 113.55px;
@@ -411,6 +508,23 @@ div.footer {
         font-size: 16px;
         flex-wrap: nowrap;
     }
-
-
+    .container-mainbody {
+        position: relative;
+        top: -100px;
+    }
+    ul.list-inline.social-links {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    li.navlink2 a i {
+        padding: 0;
+        height: 10px;
+        width: 10px;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
