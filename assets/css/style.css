@@ -438,6 +438,7 @@ div.row.row-table {
     margin-left:20px;
     font-family: "Mukta", sans-serif;
     font-weight:400i;
+    color:#fafafa;
     background-color:transparent;
 }
 .html-progress{
@@ -497,14 +498,14 @@ div.row.row-table {
     position: relative;
     padding:0;
     margin:0;
-    background-color: rgba(239, 255, 0, 0.6);
+    background-color: rgba(255, 82, 0, 0.6);
     width:80%;
     height:100%;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
-    box-shadow: 0px 0px 5px 3px rgba(239, 255, 0, 0.6);
+    box-shadow: 0px 0px 5px 3px rgba(255, 82, 0, 0.6);
 }
 
 /*------------------------------------footer-----------*/
