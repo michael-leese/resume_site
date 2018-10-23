@@ -715,6 +715,18 @@ width: max-content;
 }
     .personal-info-heading {
         font-size: 15px;
+        padding: 0 10px 10px;
+        display: flex;
+        justify-content:center;
+    }
+    .personal-info{
+        display: flex;
+    }
+    .personal-info-resize{
+    padding-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     }
     .personal-info-item .key p {
         font-size: 15px;
