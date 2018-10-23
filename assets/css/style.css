@@ -145,7 +145,6 @@ h4 {
     margin:0;
     text-align:center;
 }
-
 .flex-container {
     display: flex;
 }
@@ -571,6 +570,17 @@ div.row.row-table {
 }
 .center-form{
     
+}
+.contact-title{
+    padding-top: 10px;
+    margin-top:25px;
+    max-width:70%;
+}
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: rgba(238, 8, 8, 0.94);
 }
 /*------------------------------------End of mainbody-----------*/
 /*------------------------------------footer-----------*/
