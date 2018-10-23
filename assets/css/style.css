@@ -27,6 +27,9 @@ html {
 .bg-color-work-history{
     background-color: rgba(1, 121, 14, 0.9);
 }
+.bg-color-contact{
+    background-color: #ffffff;
+}
 .nav--home {
     background-color: rgba(255, 165, 0, 0.9);
 }
@@ -127,6 +130,7 @@ h4 {
     text-align: center;
     font-size: 16px;
 }
+.contact-heading,
 .myskills-heading,
 .history-heading,
 .section-heading {
@@ -134,6 +138,11 @@ h4 {
     font-weight: 300;
     margin-top: 25px;
     font-size: 25px;
+}
+.text-center{
+    padding:0;
+    margin:0;
+    text-align:center;
 }
 
 .flex-container {
@@ -552,6 +561,12 @@ div.row.row-table {
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
     box-shadow: 0px 0px 5px 3px rgba(255, 82, 0, 0.6);
+}
+/*------------------------------------Contact Page-----------*/
+.contact-row{
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 /*------------------------------------End of mainbody-----------*/
 /*------------------------------------footer-----------*/
