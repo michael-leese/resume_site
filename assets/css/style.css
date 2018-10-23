@@ -421,7 +421,7 @@ div.row.row-table {
 }
 /*------------------------------------ProgressBar-----------*/
 .progress{
-    padding:0
+    padding:-1px;
     margin:0;
     display: flex;
     flex-direction:column;
@@ -431,7 +431,6 @@ div.row.row-table {
     width:100%;
     margin:2px;
     border: 1px solid #5f5f5f;
-    
     height:28px;
 }
 
@@ -452,6 +451,8 @@ div.row.row-table {
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 255, 0.6);
+    
 }
 .css-progress{
     position: relative;
@@ -464,6 +465,7 @@ div.row.row-table {
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    box-shadow: 0px 0px 5px 3px rgba(255, 0, 0, 0.6);
 }
 .javascript-progress{
     position: relative;
@@ -476,6 +478,7 @@ div.row.row-table {
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    box-shadow: 0px 0px 5px 3px rgba(0, 255, 0, 0.6);
 }
 .python-django-progress{
     position: relative;
@@ -488,6 +491,7 @@ div.row.row-table {
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    box-shadow: 0px 0px 5px 3px rgba(180, 0, 255, 0.6);
 }
 .sql-nosql-progress{
     position: relative;
@@ -500,6 +504,7 @@ div.row.row-table {
     border-top-left-radius: 0;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
+    box-shadow: 0px 0px 5px 3px rgba(239, 255, 0, 0.6);
 }
 
 /*------------------------------------footer-----------*/
